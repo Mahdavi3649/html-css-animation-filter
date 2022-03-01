@@ -29,3 +29,68 @@
 .ex-4-square:hover {
   opacity: 0;
 }
+
+.ex-5-square {
+  transition: 2s;
+}
+
+.ex-5-square:hover {
+  transform: scale(2);
+}
+.ex-5-square:active {
+  transform: scale(0.5);
+}
+
+.ex-6-img:hover {
+  filter: grayscale();
+}
+
+.ex-7-square {
+  transition: 2s;
+}
+.ex-7-img:hover {
+  filter: grayscale(0.6) sepia(0.5);
+}
+
+.ex-8-img {
+  transition: 2s;
+}
+
+.ex-8-img:hover {
+  filter: grayscale(0.6) sepia(0.5);
+  border-radius: 20px;
+}
+
+.ex-9-img {
+  transition: 2s;
+}
+
+.ex-9-img:hover {
+  filter: grayscale(0.6) sepia(0.5);
+  border-radius: 20px;
+  transform: scale(1.5);
+}
+
+.ex-10-icon {
+  animation: spin 1s linear infinite;
+}
+@keyframes spin {
+  0% {
+    transform: rotate(1turn);
+  }
+}
+
+.ex-11-icon:hover {
+  animation: spinALittleBit 2s linear;
+}
+@keyframes spinALittleBit {
+  0% {
+    transform: rotate(0);
+  }
+  90% {
+    transform: rotate(315deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
